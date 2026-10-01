@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 2,
+  "id": "DuneLektorPL",
+  "name": "Dune Lektor PL",
+  "version": "0.3.1",
+  "author": "Zib3l",
+  "description": "Polski lektor (AI, jeden głos) do dialogów i przerywników. Wymaga polskiej wersji językowej gry. Głośność, tempo i przerywanie przy pomijaniu w Ustawienia > Mods (opcjonalnie WPS Framework + Mod Settings).",
+  "type": "lua",
+  "requires": [
+    {
+      "id": "wps-launcher",
+      "minVersion": "1.1.1"
+    },
+    {
+      "id": "ue4ss",
+      "minVersion": "3.0.1-1140-gf58e8f84",
+      "maxVersion": "3.0.1-1140-gf58e8f84"
+    }
+  ],
+  "loadAfter": [],
+  "conflicts": [],
+  "game": {
+    "editions": [
+      {
+        "store": "steam",
+        "steamAppId": "1172710"
+      },
+      {
+        "store": "microsoft",
+        "packageName": "FuncomOsloAS.ProjectSeabass"
+      },
+      {
+        "store": "manual",
+        "runtimeChecked": true
+      }
+    ]
+  }
+}

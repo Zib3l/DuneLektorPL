@@ -1,0 +1,47 @@
+DUNE LEKTOR PL — polski lektor do Dune: Awakening
+=================================================
+
+Lektor czyta polskie napisy dialogów i przerywników filmowych jednym męskim głosem,
+tak jak lektor w polskiej telewizji. Głos jest wygenerowany przez AI na podstawie głosu
+MG-MAT (https://www.youtube.com/@MG-MAT), za jego zgodą. Mod jest darmowy i niekomercyjny.
+
+WYMAGANIA
+- Dune: Awakening (Steam), tryb jednoosobowy (Singleplayer) — w multiplayerze mody nie działają.
+- WPS Dune Launcher 1.1.1 lub nowszy: https://www.nexusmods.com/duneawakening/mods/18
+  UE4SS jest już w launcherze — NIE instaluj go osobno.
+- Język gry: POLSKI (lektor rozpoznaje kwestie po polskich napisach).
+- Zalecane: WPS Dune Framework (https://www.nexusmods.com/duneawakening/mods/21)
+  + Native Mod Settings (https://www.nexusmods.com/duneawakening/mods/34) — suwaki głośności/tempa w menu gry.
+  Bez nich lektor też działa (ustawienia w pliku mod.ini).
+- NIE trzeba instalować Pythona, ffmpeg ani niczego innego — wszystko jest w paczce.
+
+INSTALACJA (ręcznie — NIE przez Vortex)
+1. Zamknij grę i WPS Launcher.
+2. Rozpakuj ZIP do folderu WPS Launchera (tam, gdzie jest WPS_Dune.exe) — mod trafi do Mods\DuneLektorPL.
+3. Uruchom WPS_Dune.exe, kliknij Refresh i zaznacz „Dune Lektor PL” (oraz WPS Framework i Mod Settings).
+4. Uruchom grę przez launcher. W opcjach dźwięku ścisz głośność „Dialogi”, żeby nie nakładała się
+   na lektora (oryginalne głosy zostaną cicho w tle, jak w telewizji — albo wycisz je całkiem).
+
+USTAWIENIA (Ustawienia -> zakładka Mods -> Dune Lektor PL)
+- Głośność lektora (0 = wyłączony)
+- Tempo lektora (1,15 = domyślne)
+- Przerywanie przy pomijaniu: gdy pominiesz dialog, a lektorowi zostało więcej sekund niż tyle,
+  przerywa i czyta nową kwestię; przy mniejszej reszcie kończy zdanie.
+Bez Mod Settings te same wartości są w pliku mod.ini (Glosnosc, Tempo, Pomijanie).
+Urządzenie audio: lektor gra na domyślnym urządzeniu Windows. Żeby wymusić inne, dopisz w mod.ini
+w sekcji [DuneLektorPL] linię np.  Urzadzenie=HyperX  (fragment nazwy urządzenia).
+
+GDY COŚ NIE DZIAŁA
+- Log moda: Mods\DuneLektorPL\lektor.log, log odtwarzacza: Mods\DuneLektorPL\Player\player.log.
+- Brak dźwięku: sprawdź, czy język gry to polski i czy Głośność lektora > 0.
+- Pusta zakładka Mods w ustawieniach: znany problem Mod Settings — pomaga restart gry; lektor działa dalej.
+- Antywirus/SmartScreen może zapytać o DuneLektorPlayer.exe (nowy, niepodpisany program) — to odtwarzacz
+  lektora; działa tylko lokalnie i kończy się razem z grą.
+- Po aktualizacji gry mody mogą nie działać do czasu aktualizacji WPS Launchera/UE4SS.
+
+Treść gry należy do Funcom i jej licencjodawców. Dzięki: WPS (launcher/framework), NckDotCom (Mod Settings), UE4SS.
+
+---------------------------------------------------------------------------------------------------
+ENGLISH (short): Polish voice-over (AI, single narrator) for Dune: Awakening dialogue and cinematics.
+Requires WPS Dune Launcher (UE4SS bundled - do not install separately; install manually, not via Vortex), single-player, game language set to Polish. Extract into the WPS launcher
+folder, enable in the launcher, lower in-game "Dialogue" volume. Settings in Settings -> Mods (Mod Settings).
