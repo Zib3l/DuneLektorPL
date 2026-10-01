@@ -123,7 +123,7 @@ pcall(function()
     local okF, F = pcall(require, "../../WPS_Framework/Scripts/api")
     local okS, Settings = pcall(require, "../../ModSettings/Scripts/api")
     if not (okF and okS) then log("Mod Settings niedostępne — suwaki tylko w mod.ini"); return end
-    local app = F.new{ id = "DuneLektorPL", version = "0.3.1" }
+    local app = F.new{ id = "DuneLektorPL", version = "0.3.2" }
     DuneLektorPL_Keep.app = app
     local ok, why = pcall(Settings.register, app, debug.getinfo(1, "S").source, {
         onSave = function(values)

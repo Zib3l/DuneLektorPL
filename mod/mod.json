@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "id": "DuneLektorPL",
   "name": "Dune Lektor PL",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": "Zib3l",
   "description": "Polski lektor (AI, jeden głos) do dialogów i przerywników. Wymaga polskiej wersji językowej gry. Głośność, tempo i przerywanie przy pomijaniu w Ustawienia > Mods (opcjonalnie WPS Framework + Mod Settings).",
   "type": "lua",
